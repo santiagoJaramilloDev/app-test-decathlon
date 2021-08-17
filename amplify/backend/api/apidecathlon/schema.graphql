@@ -1,0 +1,41 @@
+type Query {
+  getProducts: [Product] @function(name: "funcdecathlon-${env}")
+  getProduct(_id: ID!): Product @function(name: "funcdecathlon-${env}")
+  getUsers: [User] @function(name: "funcusers-${env}")
+  getUser(sub: ID!): User @function(name: "funcusers-${env}")
+}
+
+type Mutation {
+  saveProduct(input: InputProduct): Product @function(name: "funcdecathlon-${env}")
+  removeProduct(_id: ID!): Product @function (name: "funcdecathlon-${env}")
+  editProduct(_id: ID!, input: InputProduct): Product @function (name: "funcdecathlon-${env}")
+  saveUser(input: InputUser): User @function(name: "funcusers-${env}")
+  editUser(_id: ID!, input: InputUser): User @function (name: "funcusers-${env}")
+}
+
+
+type Product {
+  _id: ID!
+  name: String!
+  description: String!
+  cost: Int!
+}
+
+input InputProduct {
+  name: String!
+  description: String!
+  cost: Int!
+}
+
+type User {
+  _id: ID!
+  email: String!
+  sub: String!
+  type: String!
+}
+
+input InputUser {
+  email: String!
+  sub: String!
+  type: String!
+}

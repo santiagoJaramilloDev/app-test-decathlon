@@ -1,0 +1,27 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-decathlon-dev-143901-authRole",
+      "UnauthRoleArn": "arn:aws:iam::647333639711:role/amplify-decathlon-dev-143901-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::647333639711:role/amplify-decathlon-dev-143901-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-decathlon-dev-143901-deployment",
+      "UnauthRoleName": "amplify-decathlon-dev-143901-unauthRole",
+      "StackName": "amplify-decathlon-dev-143901",
+      "StackId": "arn:aws:cloudformation:us-east-2:647333639711:stack/amplify-decathlon-dev-143901/9def4f40-fec9-11eb-84bb-0a9834fc0676",
+      "AmplifyAppId": "d1u7l3y90k88dh"
+    },
+    "categories": {
+      "function": {
+        "funcdecathlon": {
+          "deploymentBucketName": "amplify-decathlon-dev-143901-deployment",
+          "s3Key": "amplify-builds/funcdecathlon-6366383176584c2f7442-build.zip"
+        },
+        "funcusers": {
+          "deploymentBucketName": "amplify-decathlon-dev-143901-deployment",
+          "s3Key": "amplify-builds/funcusers-4a4a766e51325641684e-build.zip"
+        }
+      }
+    }
+  }
+}
